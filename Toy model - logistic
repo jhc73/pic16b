@@ -31,7 +31,7 @@ def download_thumbnail(row):
         except Exception as e:
             print(f'Failed: {video_id} - {e}')
 
-df.head(100).apply(download_thumbnail, axis=1)  # 先下载100张图
+df.head(100).apply(download_thumbnail, axis=1)  # 
 
 # =============================
 # get vec
@@ -44,7 +44,7 @@ from tqdm import tqdm
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 resnet = models.resnet18(pretrained=True)
-resnet.fc = torch.nn.Identity()  # 去掉分类层
+resnet.fc = torch.nn.Identity()  # remove
 resnet = resnet.to(device)
 resnet.eval()
 
