@@ -1,6 +1,4 @@
-# This .py used to merge all the data file from kaggle to a big csv file.
-# 
-
+# This .py used to merge all the data file from kaggle to a big csv file. 
 
 # pip install chardet
 
